@@ -1,0 +1,43 @@
+module SQM_CA2_OP(input logic OP, [7:0]A, [3:0]B, output logic [7:0]Y);
+logic [7:0]C;
+
+always_comb
+begin 
+reg [7:0]M,N;
+
+if(OP==1'b1) 
+begin
+assign C = B * B;
+assign M = C % A ;
+assign Y = M;
+end
+else 
+if(OP==1'b0)
+begin
+N[0] = A[1]? (A[0]? B[3] : B[2]) 
+	          : (A[0]? B[1] : B[0]);
+N[1] = A[2]? (A[1]? B[3] : B[2])
+                  : (A[1]? B[1] : B[0]);
+N[2] = A[3]? (A[2]? B[3] : B[2])
+                  : (A[2]? B[1] : B[0]);
+N[3] = A[4]? (A[3]? B[3] : B[2])
+                  : (A[3]? B[1] : B[0]);
+N[4] = A[5]? (A[4]? B[3] : B[2])
+                  : (A[4]? B[1] : B[0]);
+N[5] = A[6]? (A[5]? B[3] : B[2])
+                  : (A[5]? B[1] : B[0]);
+N[6] = A[7]? (A[6]? B[3] : B[2])
+                  : (A[6]? B[1] : B[0]);
+N[7] = A[0]? (A[7]? B[3] : B[2])
+                  : (A[7]? B[1] : B[0]);
+assign Y = N;
+end
+end
+endmodule 
+
+
+
+
+
+
+

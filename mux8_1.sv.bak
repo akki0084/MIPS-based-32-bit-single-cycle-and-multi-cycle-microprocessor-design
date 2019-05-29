@@ -1,0 +1,15 @@
+module mux8_1(input logic a,b,c,d,e,f,g,h, [2:0]sel, output logic p);
+always_comb
+begin
+case(s)
+3'b000: p = a;
+3'b001: p = b;
+3'b010: p = c;
+3'b011: p = d;
+3'b100: p = e;
+3'b101: p = f;
+3'b110: p = g;
+3'b111: p = h;
+endcase
+end
+endmodule

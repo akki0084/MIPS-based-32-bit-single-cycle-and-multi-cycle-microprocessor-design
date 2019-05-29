@@ -1,0 +1,5 @@
+module multiply(input logic [7:0]A, [3:0]B, output logic [7:0]C);
+
+assign C = B*B;
+endmodule
+

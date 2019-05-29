@@ -1,0 +1,5 @@
+module mux4_1(input logic [3:0]a, [1:0]sel, output logic f);
+assign f = sel[1]?(sel[0]? a[3]:a[2])
+	 	 :(sel[0]? a[1]:a[0]);
+endmodule 
+

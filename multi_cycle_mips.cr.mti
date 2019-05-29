@@ -1,0 +1,45 @@
+C:/altera/15.0/Proj3A/tb_controller.sv {1 {vlog -work work -sv -stats=none C:/altera/15.0/Proj3A/tb_controller.sv
+Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+-- Compiling module tb_controller
+
+Top level modules:
+	tb_controller
+
+} {} {}} C:/altera/15.0/Proj3A/Controller_new.sv {1 {vlog -work work -sv -stats=none C:/altera/15.0/Proj3A/Controller_new.sv
+Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+-- Compiling module CONTROLLER
+-- Compiling module MAINDEC
+-- Compiling module ALUDEC
+
+Top level modules:
+	CONTROLLER
+
+} {} {}} C:/altera/15.0/Proj3A/tb.sv {1 {vlog -work work -sv -stats=none C:/altera/15.0/Proj3A/tb.sv
+Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+-- Compiling module tb
+
+Top level modules:
+	tb
+
+} {} {}} C:/altera/15.0/Proj3A/TOP.sv {1 {vlog -work work -sv -stats=none C:/altera/15.0/Proj3A/TOP.sv
+Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+-- Compiling module TOP_M
+-- Compiling module MIPS
+-- Compiling module DATAPATH
+-- Compiling module FLOPR
+-- Compiling module FLOPR1
+-- Compiling module FLOPR2
+-- Compiling module MUX2
+-- Compiling module REGFILE
+-- Compiling module SIGNEXT
+-- Compiling module Sl2
+-- Compiling module MUX4
+-- Compiling module ALU
+-- Compiling module Sl2new
+-- Compiling module MUX3
+-- Compiling module MEM
+
+Top level modules:
+	TOP_M
+
+} {} {}}
